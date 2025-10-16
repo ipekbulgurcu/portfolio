@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proje — İpek Bulgurcu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="top-app-bar" role="banner">
+    <div class="container app-bar-inner">
+      <a class="brand" href="./index.html">İpek Bulgurcu</a>
+      <nav class="nav" aria-label="Birincil">
+        <a href="./index.html#projects" data-i18n="nav.projects">Projeler</a>
+      </nav>
+      <div style="display:flex;gap:12px;align-items:center">
+        <select id="langSelect" aria-label="Dil seçimi" class="select">
+          <option value="tr">TR</option>
+          <option value="en">EN</option>
+        </select>
+        <button id="themeToggle" class="icon-button" aria-label="Tema değiştir">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" aria-labelledby="project-title">
+      <div class="section-header">
+        <h1 id="project-title" class="section-title">Proje</h1>
+        <p id="project-subtitle" class="section-subtitle">Açıklama</p>
+      </div>
+      <div class="card surface-1" style="padding:24px">
+        <img id="project-image" alt="Proje görseli" class="project-media" />
+        <div class="links-row" style="margin-top:16px">
+          <a id="project-repo" class="button filled" target="_blank" rel="noopener" data-i18n="project.openRepo">Repoyu Aç</a>
+          <a href="./index.html#projects" class="button outlined" data-i18n="project.back">← Geri Dön</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> İpek Bulgurcu</span>
+      <div class="footer-links">
+        <a href="https://github.com/ipekbulgurcu" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ipekbulgurcu/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="./project.js"></script>
+  <script src="./i18n.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
+</body>
+</html>
+

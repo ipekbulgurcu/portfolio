@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İpek Bulgurcu — Portföy</title>
+  <meta name="description" content="İpek Bulgurcu'nun kişisel portföyü. Python, görüntü işleme ve derin öğrenme projeleri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="top-app-bar" role="banner">
+    <div class="container app-bar-inner">
+      <a class="brand" href="#hero" aria-label="Ana sayfa">İpek Bulgurcu</a>
+      <nav class="nav" aria-label="Birincil">
+        <a href="#about" data-i18n="nav.about">Hakkımda</a>
+        <a href="#projects" data-i18n="nav.projects">Projeler</a>
+        <a href="#contact" data-i18n="nav.contact">İletişim</a>
+      </nav>
+      <div style="display:flex;gap:12px;align-items:center">
+        <select id="langSelect" aria-label="Dil seçimi" class="select">
+          <option value="tr">TR</option>
+          <option value="en">EN</option>
+        </select>
+        <button id="themeToggle" class="icon-button" aria-label="Tema değiştir">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title" data-i18n="hero.title">Merhaba, ben İpek</h1>
+        <p class="subtitle" data-i18n="hero.subtitle">Python, görüntü işleme ve derin öğrenme odaklı projeler geliştiriyorum.</p>
+        <div class="cta-row">
+          <a class="button filled" href="https://github.com/ipekbulgurcu" target="_blank" rel="noopener" data-i18n="cta.github">GitHub</a>
+          <a class="button outlined" href="https://www.linkedin.com/in/ipekbulgurcu/" target="_blank" rel="noopener" data-i18n="cta.linkedin">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="./hero-image.png" alt="Kahraman görseli" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section id="experience" class="section container" aria-labelledby="experience-title">
+      <div class="section-header">
+        <h2 id="experience-title" class="section-title" data-i18n="experience.title">Deneyim</h2>
+        <p class="section-subtitle" data-i18n="experience.subtitle">LinkedIn öne çıkan iş deneyimleri</p>
+      </div>
+      <div class="card surface-1 resume-card">
+        <ul class="resume-list">
+          <li>
+            <div class="resume-item">
+              <div class="resume-meta">
+                <strong>
+                  <span class="lang-tr">Yapay Zekâ Mühendisi Stajyeri — Takım Lideri</span>
+                  <span class="lang-en">AI Engineer Intern — Team Lead</span>
+                </strong>
+                <span>
+                  <span class="lang-tr">Akıllı Güzellik (TÜBİTAK 1812 BiGG Mükemmeliyet Mührü), 2025</span>
+                  <span class="lang-en">Smart Beauty (TÜBİTAK 1812 BiGG Seal of Excellence), 2025</span>
+                </span>
+                <ul>
+                  <li>
+                    <span class="lang-tr">Deri hastalıkları için yapay zekâ ve derin öğrenme modelleri üzerinde çalıştım; deneyleri belgeledim.</span>
+                    <span class="lang-en">Contributed to AI and deep learning models for skin disease diagnosis; documented experiments.</span>
+                  </li>
+                  <li>
+                    <span class="lang-tr">MS Office ile teknik rapor ve görsel özetler hazırladım.</span>
+                    <span class="lang-en">Prepared technical reports and visual summaries using MS Office.</span>
+                  </li>
+                  <li>
+                    <span class="lang-tr">Çapraz fonksiyonlu ekiplerle kilometre taşlarını koordine ettim.</span>
+                    <span class="lang-en">Coordinated milestones with cross‑functional teams.</span>
+                  </li>
+                </ul>
+              </div>
+              <a class="button text" href="https://www.linkedin.com/in/ipekbulgurcu/" target="_blank" rel="noopener" data-i18n="common.viewOnLinkedIn">LinkedIn'de Gör</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="section container" aria-labelledby="education-title">
+      <div class="section-header">
+        <h2 id="education-title" class="section-title" data-i18n="education.title">Eğitim</h2>
+        <p class="section-subtitle" data-i18n="education.subtitle">LinkedIn eğitim bilgileri</p>
+      </div>
+      <div class="card surface-1 resume-card">
+        <ul class="resume-list">
+          <li>
+            <div class="resume-item">
+              <div class="resume-meta">
+                <strong>
+                  <span class="lang-tr">Eskişehir Osmangazi Üniversitesi — Elektrik‑Elektronik Mühendisliği (İngilizce)</span>
+                  <span class="lang-en">Eskişehir Osmangazi University — Electrical‑Electronics Engineering (English)</span>
+                </strong>
+                <span>
+                  <span class="lang-tr">2019–2025 • Bölüm ikincisi</span>
+                  <span class="lang-en">2019–2025 • Ranked 2nd</span>
+                </span>
+              </div>
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="resume-item">
+              <div class="resume-meta">
+                <strong>
+                  <span class="lang-tr">Anadolu Üniversitesi — Görsel İletişim Tasarımı (AÖF)</span>
+                  <span class="lang-en">Anadolu University — Visual Communication Design (Open Education)</span>
+                </strong>
+                <span>
+                  <span class="lang-tr">2022–2026 • 3. sınıf</span>
+                  <span class="lang-en">2022–2026 • 3rd year</span>
+                </span>
+              </div>
+              <span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section container" aria-labelledby="skills-title">
+      <div class="section-header">
+        <h2 id="skills-title" class="section-title" data-i18n="skills.title">Yetenekler</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">LinkedIn onaylı yetenekler</p>
+      </div>
+      <div class="card surface-1 resume-card">
+        <ul class="chips" aria-label="Yetenekler">
+          <li class="chip">C</li>
+          <li class="chip">C++</li>
+          <li class="chip">Python</li>
+          <li class="chip">MATLAB</li>
+          <li class="chip">OOP</li>
+          <li class="chip">Embedded Systems</li>
+          <li class="chip">Qt</li>
+          <li class="chip">Image Processing</li>
+          <li class="chip">OpenCV</li>
+          <li class="chip">Matplotlib</li>
+          <li class="chip">AutoCAD 2D</li>
+          <li class="chip">Canva</li>
+          <li class="chip">Prompt Engineering</li>
+          <li class="chip">MS Office</li>
+          <li class="chip">Project Planning</li>
+          <li class="chip">Team Collaboration</li>
+        </ul>
+        <div class="links-row">
+          <a class="button text" href="https://www.linkedin.com/in/ipekbulgurcu/" target="_blank" rel="noopener" data-i18n="skills.viewAll">LinkedIn'de Tümü</a>
+          <a class="button outlined" href="./İpek_Bulgurcu_cv_eng.pdf" target="_blank" rel="noopener" data-i18n="skills.cv">Özgeçmiş (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="languages" class="section container" aria-labelledby="languages-title">
+      <div class="section-header">
+        <h2 id="languages-title" class="section-title">
+          <span class="lang-tr">Diller</span>
+          <span class="lang-en">Languages</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-tr">Yeterlilikler</span>
+          <span class="lang-en">Proficiencies</span>
+        </p>
+      </div>
+      <div class="card surface-1 resume-card">
+        <ul class="resume-list">
+          <li>
+            <div class="resume-item">
+              <div class="resume-meta">
+                <strong>
+                  <span class="lang-tr">Türkçe</span>
+                  <span class="lang-en">Turkish</span>
+                </strong>
+                <span>
+                  <span class="lang-tr">Ana dil</span>
+                  <span class="lang-en">Native</span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="resume-item">
+              <div class="resume-meta">
+                <strong>
+                  <span class="lang-tr">İngilizce</span>
+                  <span class="lang-en">English</span>
+                </strong>
+                <span>
+                  <span class="lang-tr">Profesyonel</span>
+                  <span class="lang-en">Professional</span>
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section container" aria-labelledby="about-title">
+      <div class="section-header">
+        <h2 id="about-title" class="section-title" data-i18n="about.title">Hakkımda</h2>
+        <p class="section-subtitle" data-i18n="about.subtitle">Kısa profil</p>
+      </div>
+      <div class="about-grid card surface-1">
+        <div class="about-media">
+          <img src="./about-image.png" alt="İpek Bulgurcu" loading="lazy" decoding="async" />
+        </div>
+        <div class="about-content">
+          <p data-i18n="about.paragraph">
+            Python ekosistemi ile makine öğrenmesi ve görüntü işleme projeleri geliştiriyorum. Çalışmalarım arasında veri ön işleme,
+            modelleme ve deney tekrarlanabilirliğine odaklanan küçük-orta ölçekli uygulamalar yer alıyor. Açık kaynak dünyasını
+            yakından takip ediyor, öğrendiklerimi projelerle pekiştiriyorum.
+          </p>
+          <ul class="chips" aria-label="Öne çıkan etiketler">
+            <li class="chip">Python</li>
+            <li class="chip">Görüntü İşleme</li>
+            <li class="chip">Derin Öğrenme</li>
+            <li class="chip">Jupyter</li>
+          </ul>
+          <div class="links-row">
+            <a class="button tonal" href="https://github.com/ipekbulgurcu" target="_blank" rel="noopener" data-i18n="about.githubProfile">GitHub Profil</a>
+            <a class="button text" href="https://www.linkedin.com/in/ipekbulgurcu/" target="_blank" rel="noopener" data-i18n="about.linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container" aria-labelledby="projects-title">
+      <div class="section-header">
+        <h2 id="projects-title" class="section-title" data-i18n="projects.title">Projeler</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Seçilmiş çalışmalar</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card card surface-1">
+          <div class="project-content">
+            <h3 class="project-title">
+              <span class="lang-tr">Python 202 Bootcamp/OOP Kütüphane Uygulaması</span>
+              <span class="lang-en">Python 202 Bootcamp/OOP Library Application</span>
+            </h3>
+            <p class="project-desc">
+              <span class="lang-tr">Bu proje, Python ile Nesne Yönelimli Programlama (OOP) yaklaşımıyla geliştirilen işlevsel bir kütüphane yönetim uygulamasıdır. CLI ve FastAPI tabanlı REST API içerir; kullanıcı dostu HTML arayüzü sunar. Kitap ekleme/listeleme/silme, Open Library API ile otomatik bilgi çekme, barkodla hızlı giriş ve gelişmiş arama/sıralama özellikleri bulunur.</span>
+              <span class="lang-en">This project is a functional library management application built with Python using an Object-Oriented Programming (OOP) approach. It features both a CLI and a REST API with FastAPI, and includes a user-friendly HTML interface. It allows adding/listing/deleting books, integrates with the Open Library API for auto-fetching details, supports barcode scanning, and offers advanced search/sorting.</span>
+            </p>
+            <ul class="project-details">
+              <li>Skills: FastAPI, Python, pytest, HTML, OOP, GUI, REST APIs</li>
+            </ul>
+            <div class="project-actions">
+              <a class="button text" href="https://github.com/ipekbulgurcu/python_opp_kutuphane" target="_blank" rel="noopener" data-i18n="common.repo">Repo</a>
+              <a class="button outlined" href="./project.html?id=python_opp_kutuphane" data-i18n="common.details">Detay</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card card surface-1">
+          <div class="project-content">
+            <h3 class="project-title">
+              <span class="lang-tr">Yüz Tanıma ve Duygu Analizine Dayalı Yoklama Sistemi</span>
+              <span class="lang-en">Face Recognition and Emotion Analysis Based Attendance System</span>
+            </h3>
+            <p class="project-desc">
+              <span class="lang-tr">Yüz tanıma ile otomatik yoklama alan; opsiyonel duygu analiziyle sınıf atmosferini değerlendirebilen yapay zekâ destekli bir web uygulaması. Öğretmen/öğrenci portalları, sınıf yönetimi, yoklama takibi ve raporlama içerir.</span>
+              <span class="lang-en">An AI-powered web app that automates attendance using face recognition and optionally evaluates classroom mood via emotion analysis. Includes teacher/student portals, class management, attendance tracking, and reporting.</span>
+            </p>
+            <ul class="project-details">
+              <li>Skills: Python, OpenCV, Flask, Node.js</li>
+            </ul>
+            <div class="project-actions">
+              <a class="button text" href="https://github.com/muhammetmertkus/Advanced-Facial-and-Emotion-Recognition-Based-Attendance-System" target="_blank" rel="noopener" data-i18n="common.repo">Repo</a>
+              <a class="button outlined" href="./project.html?id=attendance_system" data-i18n="common.details">Detay</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card card surface-1 pos-top">
+          <div class="project-content">
+            <h3 class="project-title">
+              <span class="lang-tr">Image Processing Application</span>
+              <span class="lang-en">Image Processing Application</span>
+            </h3>
+            <p class="project-desc">
+              <span class="lang-tr">PyQt tabanlı GUI ile Python görüntü işleme uygulaması. Dönüştürme, kenar bulma, segmentasyon; farklı formatlarda aç/kaydet gibi işlemleri destekler.</span>
+              <span class="lang-en">Python image processing app with a PyQt GUI. Provides conversion, edge detection, segmentation, and open/save for multiple formats.</span>
+            </p>
+            <ul class="project-details">
+              <li>Skills: Python, OOP, PyQt, NumPy, OpenCV</li>
+            </ul>
+            <div class="project-actions">
+              <a class="button text" href="https://github.com/ipekbulgurcu/-Image-Processing-Application" target="_blank" rel="noopener" data-i18n="common.repo">Repo</a>
+              <a class="button outlined" href="./project.html?id=image_processing_application" data-i18n="common.details">Detay</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container" aria-labelledby="contact-title">
+      <div class="section-header">
+        <h2 id="contact-title" class="section-title" data-i18n="contact.title">İletişim</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Bana ulaşın</p>
+      </div>
+      <div class="card surface-1 contact-card">
+        <p data-i18n="contact.desc">İş birlikleri veya sorularınız için LinkedIn üzerinden mesaj gönderebilirsiniz.</p>
+        <div class="links-row">
+          <a class="button filled" href="https://www.linkedin.com/in/ipekbulgurcu/" target="_blank" rel="noopener" data-i18n="contact.cta">LinkedIn'de Mesaj Gönder</a>
+          <a class="button outlined" href="https://github.com/ipekbulgurcu" target="_blank" rel="noopener" data-i18n="contact.githubProfile">GitHub Profil</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> İpek Bulgurcu</span>
+      <div class="footer-links">
+        <a href="https://github.com/ipekbulgurcu" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ipekbulgurcu/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="./i18n.js"></script>
+</body>
+</html>
+
